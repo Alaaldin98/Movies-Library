@@ -2,7 +2,7 @@
 
 // const { strict } = require("assert");
 const express = require ("express");
-const datas = require("/home/alaaldin/Movies-Library/ Movie Data/data.json");
+const datas = require("home/alaaldin/Movies-Library/Movie Data/data.json");
 const app = express();
 
 
