@@ -11,8 +11,8 @@ function datab(title,poster_path,overview ){
     this.overview = overview;
 };
 
-app.get(`/data`,dataHandler);
-app.get(`/favorite`,favoriteHander);
+app.get(`/`,dataHandler);
+app.get(`/favorite`,favoriteHandler);
 app.use("*", notFoundHandler);
 app.use("*", notFoundHandle);
 
@@ -31,7 +31,7 @@ function dataHandler(req, res){
 
 
 
-function favoriteHander(request, response){
+function favoriteHandler(request, response){
     return response.send("Welcome to Favorite Page");
 };
 
